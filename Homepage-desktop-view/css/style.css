@@ -12,7 +12,7 @@
 }
 
 .current{
-    color: rgb(85, 84, 84);  
+    color: rgb(44, 44, 44) !important;  
 }
 
 .main-body{
@@ -218,7 +218,7 @@ margin: 25px 0;
 /* mobile responsivness */
 
 
-@media(max-width: 800px){
+@media(max-width: 750px){
     header .persona, header .nav{
     display: none;
     }
@@ -326,12 +326,15 @@ margin: 25px 0;
 
 /* about css */
 
+
 .about-container{
+    display: block;
     margin: auto;
-    text-align: justify;
-    max-height: 100vh;
     justify-items: center;
-    width: 80%;
+    text-align: justify;
+    max-width: auto;
+    padding: 0 20px;
+    
 }
 
 .about-container h1{
@@ -340,14 +343,58 @@ margin: 25px 0;
 }
 
 .about-container h2{
-    text-align: left;
+    text-align: left
 }
 
 .about-container img{
+    width: 100%;
+    height: 40%;
+    margin: 10px 0;
+}
+
+
+/* blog css */
+
+.blog-container{
+    display: block;
+    margin: auto;
+    justify-items: center;
+    text-align: justify;
+    max-width: auto;
+    padding: 0 20px;
+    
+}
+
+.blog-container ul{
+    display: flex;
+}
+
+.blog-container ul li{
+    display: flex;
+    padding-right: 20px;
+    font-size: smaller;
+}
+
+.blog-container ul:first-child{
+    list-style: none;
+}
+
+.blog-container h1{
+    text-align: left;
+    margin: 30px 0;
+}
+
+.blog-container h2{
+    text-align: left;
+}
+
+
+.blog-container img{
     display: flex;
     width: 100%;
     height: 40%;
     margin: 30px 0;
-    
 }
+
+/* mobile friendly about and blog style */
 
